@@ -2,27 +2,70 @@ import React from 'react'
 import { motion } from 'motion/react'
 import visual from '../assets/visual.png'
 
+const services = [
+  'Full Stack Development',
+  'Backend Systems & APIs',
+  'Product Development Support',
+  'Application Optimization',
+]
+
 const Services = () => {
   return (
-    <div className='flex flex-col gap-10 mt-52'>
-        <motion.div initial={{ opacity: 0, y: 30}} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="border-b-2 border-b-black w-[90vw] pb-3 flex items-center gap-2 ml-20">
-            <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-            <h1 className="text-xl font-[poppins] font-normal ">Services</h1>
+    <section className="w-full py-16 lg:py-24">
+      <div className="section-container flex flex-col gap-8 lg:gap-10">
+        {/* Section header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="section-header"
+        >
+          <div className="section-dot"></div>
+          <h2 className="section-title">Services</h2>
         </motion.div>
 
-        <motion.h1 initial={{ opacity: 0, y: 30}} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }} className='text-6xl font-[550] font-[Lato] ml-[70px]'>HOW CAN I HELP?</motion.h1>
+        {/* Section heading */}
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+          className="font-semibold font-lato"
+          style={{ fontSize: 'clamp(1.75rem, 4vw, 3.75rem)' }}
+        >
+          HOW CAN I HELP?
+        </motion.h2>
 
-      <div className="w-full h-[70vh] grid grid-cols-2 gap-20">
-        <div className="flex flex-col gap-4">
-          <motion.h1 initial={{ opacity: 0, y: 30}} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }} className='text-3xl text-gray-600 font-normal font-[Lato] ml-[70px] mt-10'> Full Stack Development</motion.h1>
-          <motion.h1 initial={{ opacity: 0, y: 30}} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.4 }} className='text-3xl text-gray-600 font-normal font-[Lato] ml-[70px] mt-10'> Backend System & APIs</motion.h1>
-          <motion.h1 initial={{ opacity: 0, y: 30}} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.6 }} className='text-3xl text-gray-600 font-normal font-[Lato] ml-[70px] mt-10'> Product Development Support</motion.h1>
-          <motion.h1 initial={{ opacity: 0, y: 30}} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.8 }} className='text-3xl text-gray-600 font-normal font-[Lato] ml-[70px] mt-10'> Application Opitimization</motion.h1>
+        {/* Content grid */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-16">
+          {/* Service list */}
+          <div className="flex flex-col gap-4 lg:gap-6">
+            {services.map((service, i) => (
+              <motion.h3
+                key={service}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.2 + i * 0.15 }}
+                className="text-gray-600 font-normal font-lato"
+                style={{ fontSize: 'clamp(1.25rem, 3vw, 1.875rem)' }}
+              >
+                {service}
+              </motion.h3>
+            ))}
+          </div>
+
+          {/* Visual image */}
+          <motion.img
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            src={visual}
+            alt="Development workflow visualization"
+            loading="lazy"
+            className="w-full max-w-lg mx-auto lg:max-w-none rounded-2xl"
+          />
         </div>
-
-        <img src={visual} className='w-[600px] rounded-2xl relative right-6' />
       </div>
-    </div>
+    </section>
   )
 }
 
