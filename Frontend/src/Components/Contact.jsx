@@ -66,7 +66,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="https://github.com/Devansh-sys899"
+              href="https://github.com/Devansh-Nahar"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}

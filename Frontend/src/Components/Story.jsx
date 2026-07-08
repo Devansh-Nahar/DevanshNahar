@@ -25,7 +25,7 @@ const Story = () => {
             className="text-gray-700 font-normal font-poppins text-center sm:text-left sm:max-w-xs lg:max-w-sm"
             style={{ fontSize: 'clamp(0.938rem, 2vw, 1.125rem)' }}
           >
-            I am a MERN stack developer who builds production ready applications and complex workflows
+            I'm a Full Stack MERN Developer passionate about building scalable backend systems and production-ready web applications.
           </motion.p>
 
           <motion.p
@@ -35,7 +35,7 @@ const Story = () => {
             className="text-gray-700 font-normal font-poppins text-center sm:text-left sm:max-w-xs lg:max-w-sm"
             style={{ fontSize: 'clamp(0.938rem, 2vw, 1.125rem)' }}
           >
-            I enjoy working on complex workflows, backend systems, and improving how products scale and perform.
+            Currently looking for Full Stack MERN Internship opportunities where I can contribute while continuously learning.
           </motion.p>
         </div>
       </div>

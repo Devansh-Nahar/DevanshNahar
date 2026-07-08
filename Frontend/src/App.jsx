@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Story from './Components/Story'
 import Projects from './Components/Projects'
-import Services from './Components/Services'
+import TechStack from './Components/TechStack'
 import Contact from './Components/Contact'
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
       <Hero />
       <Story />
       <Projects />
-      <Services />
+      <TechStack />
       <Contact />
     </div>
   )

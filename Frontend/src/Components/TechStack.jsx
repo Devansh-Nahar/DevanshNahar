@@ -3,13 +3,16 @@ import { motion } from 'motion/react'
 import visual from '../assets/visual.png'
 
 const services = [
-  'Full Stack Development',
-  'Backend Systems & APIs',
-  'Product Development Support',
-  'Application Optimization',
+  'React',
+  'Express',
+  'NodeJS',
+  'MongoDB',
+  'TailwindCSS',
+  'Github',
+  'Docker'
 ]
 
-const Services = () => {
+const TechStack = () => {
   return (
     <section className="w-full py-16 lg:py-24">
       <div className="section-container flex flex-col gap-8 lg:gap-10">
@@ -21,7 +24,7 @@ const Services = () => {
           className="section-header"
         >
           <div className="section-dot"></div>
-          <h2 className="section-title">Services</h2>
+          <h2 className="section-title">Skills</h2>
         </motion.div>
 
         {/* Section heading */}
@@ -69,4 +72,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default TechStack

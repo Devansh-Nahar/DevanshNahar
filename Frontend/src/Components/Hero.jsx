@@ -24,18 +24,20 @@ const Hero = () => {
             className="font-ubuntu font-semibold leading-[1.1]"
             style={{ fontSize: 'clamp(2rem, 5vw, 5rem)' }}
           >
-            Building Scalable web applications with impact
+            Building production-ready web platforms.
           </motion.h1>
 
-          <motion.button
+          <motion.a
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.4 }}
+            href="/Devansh_Nahar_CV.pdf"
+            download={"Devansh_Nahar_CV.pdf"}
             className="w-full sm:w-64 h-12 rounded-3xl bg-black flex items-center justify-center gap-4 text-white text-base font-normal font-poppins hover:bg-gray-800 transition-colors duration-200 cursor-pointer"
           >
             <i className="bx bxs-chat text-white text-2xl relative top-0.5"></i>
-            Book an intro call
-          </motion.button>
+            Download Resume
+          </motion.a>
         </div>
 
         {/* Profile image — shows ABOVE text on mobile (flex-col-reverse) */}

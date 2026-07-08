@@ -8,7 +8,7 @@ const projectData = [
     title: 'Finexus',
     image: FinexusImg,
     description:
-      'Built a conversational AI system that centralizes financial operations like invoicing, reporting, and bookkeeping across platforms like Stripe and PayPal.',
+      'AI-powered financial workflow platform',
     link: 'https://finexus-delta.vercel.app/',
     features: [
       'Conversational interface (no dashboard dependency)',
